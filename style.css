@@ -109,10 +109,12 @@ p {
     border-top-right-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
 }
 
 .tab-btn:nth-child(1) {
     border-top-left-radius: 5px;
+    padding: 0 !important;
 }
 
 .tab-btn:nth-child(3) {
@@ -123,7 +125,7 @@ p {
     background-color: hsl(212, 33%, 89%);
     text-transform: capitalize;
     border: none;
-    padding: 1rem 0;
+    padding: .8rem 0 !important;
     display: block;
     letter-spacing: 3px;
     font-size: 1rem;
@@ -132,6 +134,7 @@ p {
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
+    height: 3.5rem;
 }
 
 @media (min-width: 1025px) {
@@ -158,9 +161,11 @@ p {
     font-weight: bold;
 }
 
+
 /* hide-content */
 .content {
     display: none;
+    height: auto;
 }
 
 .tab-btn.active {
